@@ -29,6 +29,19 @@
     <h2>ここではgitからgithubにプッシュする流れを書きます。</h2>
     <p>Githubに対してssh接続をします。</p>
     <p class="cord">$ ssh -T git@github.com</p>
+
+    
+    <p>作業ブランチの切り替え</p>
+    <p>
+      ブランチの仕組み
+      project(main)─────────────────────────&gt;
+      　　　　　　　　 │　　　　│　　　　　　　│
+      　　　　　　　　 │　　　　└─(緊急対応)──│
+      　　　　　　　　 │　　　　 　　　　　　　│
+      　　　　　　　　 └─(develop)─────────────────────&gt;
+      　　　　　　　　　　　　　　　　└─edit───────────└(push)
+    </p>
+    <p class="cord">git checkout ブランチ名</p>
   </div>
 </body>
 </html>
